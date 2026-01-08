@@ -1,0 +1,13 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "indent": "off",
+    "quotes": "off",
+    "react/display-name": "off",
+    "react/no-unescaped-entities": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "@typescript-eslint/no-explicit-any": "off", // Disable the rule globally
+    "semi": ["error", "never"],  // Change this to 'never' if you don't want semicolons
+    "@typescript-eslint/semi": ["error", "never"] // Disable semicolon rule for TypeScript
+  }
+}

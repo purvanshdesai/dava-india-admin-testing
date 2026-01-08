@@ -1,0 +1,25 @@
+1. Authentication - NextAuth
+2. Forms - react-form-hooks
+3. Form validation - zod
+4. UI components - Shadcn/ui
+5. Dark/Light mode - next-themes
+6. Icons - lucide-react
+7. API integrations - Server actions & react-query
+8. Internationalization - i18next
+9. State Management - Zustand
+10. Data fetching - axios
+
+
+
+AuthLayout
+    - SignIn
+    - Register
+
+MainLayout
+    - AdvertisementCarousal
+    - Products
+
+Components
+- Navbar
+- Footer
+- Notifications

@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+  }
+  body {
+    overflow-y: hidden;
+    @apply dark:bg-gray-900 bg-white
+  }
+}
+
+.loader {
+  width: 120px;
+  height: 20px;
+  -webkit-mask: linear-gradient(90deg,#000 70%,#0000 0) left/20% 100%;
+  background:
+   linear-gradient(#ef6824 0 0) left -25% top 0 /20% 100% no-repeat
+   #ddd;
+  animation: l7 1s infinite steps(6);
+}
+@keyframes l7 {
+    100% {background-position: right -25% top 0}
+}
+
+
+/* Tip tap editor */
+.ProseMirror table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.ProseMirror th,
+.ProseMirror td {
+  border: 1px solid #d1d5db; /* Tailwind gray-300 */
+  padding: 8px;
+}
+
+.ProseMirror th {
+  background-color: #f9fafb; /* Tailwind gray-50 */
+  font-weight: 600;
+  text-align: left;
+}
+
+.ProseMirror h1 {
+  font-size: 1.875rem /* 30px */;
+  line-height: 2.25rem /* 36px */;
+  font-weight: 500;
+}
+
+.ProseMirror h2 {
+  font-size: 1.5rem /* 24px */;
+  line-height: 2rem /* 32px */;
+}
+
+.ProseMirror ol {
+  list-style: decimal !important;
+  padding-left: 14px;
+}
+
+.ProseMirror ul {
+  list-style: disc !important;
+  padding-left: 14px;
+}
